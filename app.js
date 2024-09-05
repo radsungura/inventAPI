@@ -25,6 +25,8 @@ app.use(cors());
 // Import the routes
 const clients = require('./router/clients');
 const products = require('./router/products');
+const users = require('./router/users');
+const suppliers = require('./router/suppliers');
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -44,6 +46,16 @@ app.use('/api', (req, res, next) => {
   req.db = getDb();
   next();
 }, products);
+
+app.use('/api', (req, res, next) => {
+  req.db = getDb();
+  next();
+}, users);
+
+app.use('/api', (req, res, next) => {
+  req.db = getDb();
+  next();
+}, suppliers);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

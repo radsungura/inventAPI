@@ -7,19 +7,8 @@
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/radsungura/inventAPI.git"
-  },
-  "keywords": [
-    "radlion1"
-  ],
   "author": "rad",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/radsungura/inventAPI/issues"
-  },
-  "homepage": "https://github.com/radsungura/inventAPI#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
