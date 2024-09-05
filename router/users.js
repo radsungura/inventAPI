@@ -3,38 +3,38 @@ const { MongoClient, ObjectId } = require('mongodb');
 const express = require("express");
 const router = express.Router();
 
-router.get('/clients/get', async (req, res) => {
+router.get('/users/get', async (req, res) => {
   const db = req.db;
-  const clientsCollection = db.collection('Clients');
-  const clients = await clientsCollection.find({}).toArray();
-  res.send(clients);
+  const usersCollection = db.collection('Users');
+  const users  = await usersCollection.find({}).toArray();
+  res.send(users);
 });
 
 router.get("/get/:id", async (req, res) => {
   const db = req.db;
-  const collection = db.collection('clients');
-  const clients = await collection.findOne({ _id: new ObjectId(req.params.id) });
-    if (!clients) {
+  const collection = db.collection('Users');
+  const cow = await collection.findOne({ _id: new ObjectId(req.params.id) });
+    if (!cow) {
       res.status(404).send({ message: "No data match your research" });
     }
-     res.status(200).json(clients);
+     res.status(200).json(cow);
 })
 
-// Add a new clients
+// Add a new cow
 
 router.post('/add', async (req, res) => {
   const db = req.db;
   console.log(req);
-  const collection = db.collection('clients');
+  const collection = db.collection('Users');
   const result = await collection.insertOne(req.body);
   res.json(result);
 });
 
-// Update a clients by ID
+// Update a cow by ID
 
 router.put('/set/:id', async (req, res) => {
   const db = req.db;
-  const collection = db.collection('clients');
+  const collection = db.collection('Users');
   const result = await collection.updateOne(
     { _id: new ObjectId(req.params.id) },
     { $set: req.body }
@@ -44,11 +44,11 @@ router.put('/set/:id', async (req, res) => {
 
 });
 
-// Delete a clients by ID
+// Delete a cow by ID
 
 router.delete('/delete/:id', async (req, res) => {
   const db = req.db;
-  const collection = db.collection('clients');
+  const collection = db.collection('Users');
   const result = await collection.deleteOne({ _id: new ObjectId(req.params.id) });
   res.json(result);
 });
