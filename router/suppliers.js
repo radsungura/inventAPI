@@ -10,7 +10,7 @@ router.get('/suppliers/get', async (req, res) => {
   res.send(suppliers);
 });
 
-router.get("/get/:id", async (req, res) => {
+router.get("/suppliers/get/:id", async (req, res) => {
   const db = req.db;
   const collection = db.collection('Suppliers');
   const suppliers = await collection.findOne({ _id: new ObjectId(req.params.id) });
@@ -22,7 +22,7 @@ router.get("/get/:id", async (req, res) => {
 
 // Add a new suppliers
 
-router.post('/add', async (req, res) => {
+router.post('/suppliers/add', async (req, res) => {
   const db = req.db;
   console.log(req);
   const collection = db.collection('Suppliers');
@@ -32,7 +32,7 @@ router.post('/add', async (req, res) => {
 
 // Update a suppliers by ID
 
-router.put('/set/:id', async (req, res) => {
+router.put('/suppliers/set/:id', async (req, res) => {
   const db = req.db;
   const collection = db.collection('Suppliers');
   const result = await collection.updateOne(
@@ -46,7 +46,7 @@ router.put('/set/:id', async (req, res) => {
 
 // Delete a suppliers by ID
 
-router.delete('/delete/:id', async (req, res) => {
+router.delete('/suppliers/delete/:id', async (req, res) => {
   const db = req.db;
   const collection = db.collection('Suppliers');
   const result = await collection.deleteOne({ _id: new ObjectId(req.params.id) });
