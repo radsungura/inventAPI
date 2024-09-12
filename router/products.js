@@ -10,7 +10,7 @@ router.get('/products/get', async (req, res) => {
   res.send(products);
 });
 
-router.get("/get/:id", async (req, res) => {
+router.get("/products/get/:id", async (req, res) => {
   const db = req.db;
   const collection = db.collection('Products');
   const products = await collection.findOne({ _id: new ObjectId(req.params.id) });
@@ -22,7 +22,7 @@ router.get("/get/:id", async (req, res) => {
 
 // Add a new products
 
-router.post('/add', async (req, res) => {
+router.post('/products/add', async (req, res) => {
   const db = req.db;
   console.log(req);
   const collection = db.collection('Products');
@@ -32,7 +32,7 @@ router.post('/add', async (req, res) => {
 
 // Update a products by ID
 
-router.put('/set/:id', async (req, res) => {
+router.put('/products/set/:id', async (req, res) => {
   const db = req.db;
   const collection = db.collection('Products');
   const result = await collection.updateOne(
@@ -46,7 +46,7 @@ router.put('/set/:id', async (req, res) => {
 
 // Delete a products by ID
 
-router.delete('/delete/:id', async (req, res) => {
+router.delete('/products/delete/:id', async (req, res) => {
   const db = req.db;
   const collection = db.collection('Products');
   const result = await collection.deleteOne({ _id: new ObjectId(req.params.id) });

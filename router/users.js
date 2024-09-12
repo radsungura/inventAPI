@@ -10,7 +10,7 @@ router.get('/users/get', async (req, res) => {
   res.send(users);
 });
 
-router.get("/get/:id", async (req, res) => {
+router.get("/users/get/:id", async (req, res) => {
   const db = req.db;
   const collection = db.collection('Users');
   const cow = await collection.findOne({ _id: new ObjectId(req.params.id) });
@@ -22,7 +22,7 @@ router.get("/get/:id", async (req, res) => {
 
 // Add a new cow
 
-router.post('/add', async (req, res) => {
+router.post('/users/add', async (req, res) => {
   const db = req.db;
   console.log(req);
   const collection = db.collection('Users');
@@ -32,7 +32,7 @@ router.post('/add', async (req, res) => {
 
 // Update a cow by ID
 
-router.put('/set/:id', async (req, res) => {
+router.put('/users/set/:id', async (req, res) => {
   const db = req.db;
   const collection = db.collection('Users');
   const result = await collection.updateOne(
@@ -46,7 +46,7 @@ router.put('/set/:id', async (req, res) => {
 
 // Delete a cow by ID
 
-router.delete('/delete/:id', async (req, res) => {
+router.delete('/users/delete/:id', async (req, res) => {
   const db = req.db;
   const collection = db.collection('Users');
   const result = await collection.deleteOne({ _id: new ObjectId(req.params.id) });
