@@ -35,8 +35,10 @@ Below are the key endpoints for interacting with the API:
 /users: CRUD operations for managing users.
 /clients: CRUD operations for managing clients.
 /suppliers: CRUD operations for managing suppliers.
-/products: CRUD operations for managing products.
+/products: CRUD operations for managing products. 
+
 # Technologies Used
+
 Node.js: JavaScript runtime environment.
 Express: Web framework for Node.js.
 MongoDB: NoSQL database for storing data.
@@ -71,3 +73,4 @@ In Africa’s rapidly evolving economies, efficiency is key. An inventory manage
 By adopting modern inventory systems, African businesses can improve their competitiveness, streamline operations, and play an even bigger role in the continent’s economic growth.
 
 Thank you for using inventAPI! 🙌
+
