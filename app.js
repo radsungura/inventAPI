@@ -1,24 +1,16 @@
-// require('.env').config();
-const cors = require('cors');
+const cors = require("cors");
 const express = require("express");
 const app = express();
 const { connectToMongo, getDb } = require('./db');
-const port = process.env.PORT || 3000;
-
-
-
-// app.use(cors({
-//   origin: /http:\/\/rad-pc/
-// }));
+const port = process.env.PORT || 4000;
 
 // Enable CORS for specific origins
-// const corsOptions = {
-//   origin: 'http://localhost:4200', //  Allowed origin
-//   optionsSuccessStatus: 200 // For legacy browser support
-// };
-// app.use(cors(corsOptions));
-// default but not secure, all origin 
-app.use(cors()); 
+
+const corsOptions = {
+  origin: 'https://e-inventory.onrender.com', //  Allowed origin
+  optionsSuccessStatus: 200 // For legacy browser support
+};
+app.use(cors(corsOptions));
 
 
 
@@ -29,7 +21,7 @@ const users = require('./router/users');
 const suppliers = require('./router/suppliers');
 
 // Middleware to parse JSON bodies
-app.use(express.json());
+app.use(express.json()); 
 
 // Connect to MongoDB
 connectToMongo().catch(err => {

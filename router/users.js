@@ -1,36 +1,38 @@
-// require('dotenv').config();
-const { MongoClient, ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb');
 const express = require("express");
 const router = express.Router();
 
+// Get all Users list
+
 router.get('/users/get', async (req, res) => {
   const db = req.db;
-  const usersCollection = db.collection('Users');
-  const users  = await usersCollection.find({}).toArray();
+  const collection = db.collection('Users');
+  const users  = await collection.find({}).toArray();
   res.send(users);
 });
+
+// Get a User by ID
 
 router.get("/users/get/:id", async (req, res) => {
   const db = req.db;
   const collection = db.collection('Users');
-  const cow = await collection.findOne({ _id: new ObjectId(req.params.id) });
-    if (!cow) {
+  const user = await collection.findOne({ _id: new ObjectId(req.params.id) });
+    if (!user) {
       res.status(404).send({ message: "No data match your research" });
     }
-     res.status(200).json(cow);
+     res.status(200).json(user);
 })
 
-// Add a new cow
+// Add a new User
 
 router.post('/users/add', async (req, res) => {
   const db = req.db;
-  console.log(req);
   const collection = db.collection('Users');
   const result = await collection.insertOne(req.body);
   res.json(result);
 });
 
-// Update a cow by ID
+// Update a User by ID
 
 router.put('/users/set/:id', async (req, res) => {
   const db = req.db;
@@ -40,11 +42,9 @@ router.put('/users/set/:id', async (req, res) => {
     { $set: req.body }
   );
   res.status(200).json(result);
-  console.log("set data", req.body);
-
 });
 
-// Delete a cow by ID
+// Delete a User by ID
 
 router.delete('/users/delete/:id', async (req, res) => {
   const db = req.db;
