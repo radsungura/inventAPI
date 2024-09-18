@@ -6,7 +6,9 @@
 inventAPI is a backend API designed for inventory systems. It provides CRUD operations for managing users, clients, suppliers, and products in a web-based environment.
 
 1.Our API is deployed on : https://inventapi.onrender.com,
+
 2.used with this app: https://e-inventory.onrender.com/products, 
+
 3. Authors LinkedIn:
 
     1. Noella JAREGA, https://www.linkedin.com/in/noella-jarega-a308261b9/
