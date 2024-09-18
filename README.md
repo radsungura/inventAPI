@@ -75,13 +75,13 @@ This project is licensed under the MIT License, meaning it is open-source and fr
 
 Story
 
-Across Africa, businesses of all sizes—from local shops to large wholesalers—are the lifeblood of vibrant, growing economies. Yet, one of the biggest challenges they face is efficiently managing inventory. Whether it’s a market vendor in Lagos selling handcrafted goods, a farmer in Uganda managing crop supplies, or a shop owner in Johannesburg keeping up with customer demand, inventory management is critical to staying competitive.
+Across Africa, businesses of all sizesfrom local shops to large wholesalersare the lifeblood of vibrant, growing economies. Yet, one of the biggest challenges they face is efficiently managing inventory. Whether it’s a market vendor in Lagos selling handcrafted goods, a farmer in Uganda managing crop supplies, or a shop owner in Johannesburg keeping up with customer demand, inventory management is critical to staying competitive.
 
 In many cases, businesses still rely on manual methods, like handwritten records or simple spreadsheets, to track their stock. These methods are prone to errors, and they can make it difficult to keep up with the fast-moving nature of trade in Africa’s bustling cities and rural communities.
 
-This is where an inventory management system can be a game changer. Imagine a local store owner in Accra who imports goods from suppliers and sells to both regular customers and other businesses. With an inventory system, they can easily track stock levels, automate reorders, and keep detailed records of every transaction—all while reducing the risk of stockouts or overstocking.
+This is where an inventory management system can be a game changer. Imagine a local store owner in Accra who imports goods from suppliers and sells to both regular customers and other businesses. With an inventory system, they can easily track stock levels, automate reorders, and keep detailed records of every transactionall while reducing the risk of stockouts or overstocking.
 
-For farmers in agricultural regions, an inventory system helps them better manage the flow of seeds, fertilizers, and harvested crops. It provides real-time updates on available supplies, ensures that nothing goes to waste, and helps them plan more effectively for the seasons ahead.
+For farmers in agricultural regions, an inventory system helps them better manage the flow of seeds, fertilizers, and harvested crops. It provides realtime updates on available supplies, ensures that nothing goes to waste, and helps them plan more effectively for the seasons ahead.
 
 From urban centers like Nairobi to rural towns, an inventory system helps African businesses optimize their operations, cut down on waste, and maintain a steady supply of products. By automating stock management and providing insights into supply and demand, these systems allow businesses to focus more on growth and less on manual tracking.
 
