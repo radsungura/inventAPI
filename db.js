@@ -1,6 +1,7 @@
 const { MongoClient, ObjectId  } = require('mongodb');
 
-const url = 'mongodb://localhost:27017';
+// const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://rukunddiacre:fB05PLQs0GzAqdHP@cluster0.xwplm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const dbName = 'invetoryDB';
 let db;
 

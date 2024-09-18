@@ -1,5 +1,5 @@
 // require('dotenv').config();
-const cors = require('cors');
+const cors = require("cors");
 const express = require("express");
 const app = express();
 const { connectToMongo, getDb } = require('./db');
@@ -29,7 +29,8 @@ const users = require('./router/users');
 const suppliers = require('./router/suppliers');
 
 // Middleware to parse JSON bodies
-app.use(express.json());
+app.use(express.json()); // Pour parser le JSON
+// app.use(express.urlencoded({ extended: true }));
 
 // Connect to MongoDB
 connectToMongo().catch(err => {

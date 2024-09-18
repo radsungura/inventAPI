@@ -3,12 +3,16 @@ const { MongoClient, ObjectId } = require('mongodb');
 const express = require("express");
 const router = express.Router();
 
+// Get all Supplires list
+
 router.get('/suppliers/get', async (req, res) => {
   const db = req.db;
   const suppliersCollection = db.collection('Suppliers');
   const suppliers  = await suppliersCollection.find({}).toArray();
   res.send(suppliers);
 });
+
+// Get a Supplier by ID
 
 router.get("/suppliers/get/:id", async (req, res) => {
   const db = req.db;
