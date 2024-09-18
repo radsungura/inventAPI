@@ -5,20 +5,13 @@ const app = express();
 const { connectToMongo, getDb } = require('./db');
 const port = process.env.PORT || 4000;
 
-
-
-// app.use(cors({
-//   origin: /http:\/\/rad-pc/
-// }));
-
 // Enable CORS for specific origins
-// const corsOptions = {
-//   origin: 'http://localhost:4200', //  Allowed origin
-//   optionsSuccessStatus: 200 // For legacy browser support
-// };
-// app.use(cors(corsOptions));
-// default but not secure, all origin 
-app.use(cors()); 
+
+const corsOptions = {
+  origin: 'https://e-inventory.onrender.com', //  Allowed origin
+  optionsSuccessStatus: 200 // For legacy browser support
+};
+app.use(cors(corsOptions));
 
 
 
