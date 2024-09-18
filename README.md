@@ -3,7 +3,8 @@
 # Introduction
 
 ![API Screenshot](assets/images/inventory.jpeg)
-inventAPI is a backend API designed for inventory systems. It provides CRUD operations for managing users, clients, suppliers, and products in a web-based environment.
+
+inventAPI is a backend API designed for inventory systems. It provides CRUD operations for managing Users, Clients, Suppliers, and products in a web-based environment.
 
 1.Our API is deployed on : https://inventapi.onrender.com,
 
@@ -24,11 +25,17 @@ This API is web-based, meaning there is no installation required. You can clone 
 Our API is not currently public. However, if you would like to use it, you are welcome to clone this repository and run it locally.
 
 To clone the repository:
+
 bash
+
 Copy code
+
 git clone https://github.com/yourusername/inventAPI.git
+
 run npm install
+
 install mongodb
+
 Once cloned, ensure that you have all the necessary dependencies and environment variables set up for your local environment
 Change the database url in db.js to your own.
 
@@ -37,15 +44,21 @@ Change the database url in db.js to your own.
 Below are the key endpoints for interacting with the API:
 
 /users: CRUD operations for managing users.
+
 /clients: CRUD operations for managing clients.
+
 /suppliers: CRUD operations for managing suppliers.
+
 /products: CRUD operations for managing products. 
 
 # Technologies Used
 
 Node.js: JavaScript runtime environment.
+
 Express: Web framework for Node.js.
+
 MongoDB: NoSQL database for storing data.
+
 Cors: Middleware for enabling CORS (Cross-Origin Resource Sharing).
 
 
