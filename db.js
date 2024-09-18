@@ -21,5 +21,7 @@ const getDb = () => {
   }
   return db;
 };
+
 // export connection
+
 module.exports = { connectToMongo, getDb };

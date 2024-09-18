@@ -28,7 +28,6 @@ router.get("/users/get/:id", async (req, res) => {
 
 router.post('/users/add', async (req, res) => {
   const db = req.db;
-  console.log(req);
   const collection = db.collection('Users');
   const result = await collection.insertOne(req.body);
   res.json(result);
@@ -44,8 +43,6 @@ router.put('/users/set/:id', async (req, res) => {
     { $set: req.body }
   );
   res.status(200).json(result);
-  console.log("set data", req.body);
-
 });
 
 // Delete a User by ID

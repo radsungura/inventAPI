@@ -27,7 +27,6 @@ router.get("/clients/get/:id", async (req, res) => {
 
 router.post('/clients/add', async (req, res) => {
   const db = req.db;
-  console.log(req);
   const collection = db.collection('Clients');
   const result = await collection.insertOne(req.body);
   res.json(result);
@@ -43,7 +42,6 @@ router.put('/clients/set/:id', async (req, res) => {
     { $set: req.body }
   );
   res.status(200).json(result);
-  console.log("set data", req.body);
 
 });
 
