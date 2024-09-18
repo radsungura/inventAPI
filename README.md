@@ -4,11 +4,13 @@
 
 ![API Screenshot](assets/images/inventory.jpeg)
 
+
 inventAPI is a backend API designed for inventory systems. It provides CRUD operations for managing Users, Clients, Suppliers, and products in a web-based environment.
 
 1.Our API is deployed on : https://inventapi.onrender.com,
 
 2.used with this app: https://e-inventory.onrender.com/products, 
+
 
 3. Authors LinkedIn:
 
@@ -49,7 +51,9 @@ Below are the key endpoints for interacting with the API:
 
 /suppliers: CRUD operations for managing suppliers.
 
+
 /products: CRUD operations for managing products. 
+
 
 # Technologies Used
 
@@ -73,11 +77,11 @@ Our project is a portofolio project one of the ALX Africa Program project
 
 This project is licensed under the MIT License, meaning it is open-source and free to use.
 
-Story
+# Story
 
 Across Africa, businesses of all sizesfrom local shops to large wholesalersare the lifeblood of vibrant, growing economies. Yet, one of the biggest challenges they face is efficiently managing inventory. Whether it’s a market vendor in Lagos selling handcrafted goods, a farmer in Uganda managing crop supplies, or a shop owner in Johannesburg keeping up with customer demand, inventory management is critical to staying competitive.
 
-In many cases, businesses still rely on manual methods, like handwritten records or simple spreadsheets, to track their stock. These methods are prone to errors, and they can make it difficult to keep up with the fast-moving nature of trade in Africa’s bustling cities and rural communities.
+In many cases, businesses still rely on manual methods, like handwritten records or simple spreadsheets, to track their stock. These methods are prone to errors, and they can make it difficult to keep up with the fastmoving nature of trade in Africa’s bustling cities and rural communities.
 
 This is where an inventory management system can be a game changer. Imagine a local store owner in Accra who imports goods from suppliers and sells to both regular customers and other businesses. With an inventory system, they can easily track stock levels, automate reorders, and keep detailed records of every transactionall while reducing the risk of stockouts or overstocking.
 
@@ -90,4 +94,3 @@ In Africa’s rapidly evolving economies, efficiency is key. An inventory manage
 By adopting modern inventory systems, African businesses can improve their competitiveness, streamline operations, and play an even bigger role in the continent’s economic growth.
 
 Thank you for using inventAPI! 🙌
-
