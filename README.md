@@ -3,16 +3,19 @@
 # Introduction
 
 ![API Screenshot](assets/images/inventory.jpeg)
-inventAPI is a backend API designed for inventory systems. It provides CRUD operations for managing Users, Clients, Suppliers, and Products in a web-based environment.
+
+
+inventAPI is a backend API designed for inventory systems. It provides CRUD operations for managing Users, Clients, Suppliers, and products in a web-based environment.
 
 1.Our API is deployed on : https://inventapi.onrender.com,
 
 2.used with this app: https://e-inventory.onrender.com/products, 
 
-3.Authors LinkedIn:
+
+3. Authors LinkedIn:
 
     1. Noella JAREGA, https://www.linkedin.com/in/noella-jarega-a308261b9/
-
+    
     2. Aime RUKUNDO, https://www.linkedin.com/in/aimeruk/
 
 # Installation
@@ -24,6 +27,7 @@ This API is web-based, meaning there is no installation required. You can clone 
 Our API is not currently public. However, if you would like to use it, you are welcome to clone this repository and run it locally.
 
 To clone the repository:
+
 bash
 
 Copy code
@@ -47,7 +51,9 @@ Below are the key endpoints for interacting with the API:
 
 /suppliers: CRUD operations for managing suppliers.
 
-/products: CRUD operations for managing products.
+
+/products: CRUD operations for managing products. 
+
 
 # Technologies Used
 
@@ -77,7 +83,7 @@ Across Africa, businesses of all sizesfrom local shops to large wholesalersare t
 
 In many cases, businesses still rely on manual methods, like handwritten records or simple spreadsheets, to track their stock. These methods are prone to errors, and they can make it difficult to keep up with the fastmoving nature of trade in Africa’s bustling cities and rural communities.
 
-This is where an inventory management system can be a game changer. Imagine a local store owner in Accra who imports goods from suppliers and sells to both regular customers and other businesses. With an inventory system, they can easily track stock levels, automate reorders, and keep detailed records of every transaction—all while reducing the risk of stockouts or overstocking.
+This is where an inventory management system can be a game changer. Imagine a local store owner in Accra who imports goods from suppliers and sells to both regular customers and other businesses. With an inventory system, they can easily track stock levels, automate reorders, and keep detailed records of every transactionall while reducing the risk of stockouts or overstocking.
 
 For farmers in agricultural regions, an inventory system helps them better manage the flow of seeds, fertilizers, and harvested crops. It provides realtime updates on available supplies, ensures that nothing goes to waste, and helps them plan more effectively for the seasons ahead.
 
