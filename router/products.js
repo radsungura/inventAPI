@@ -1,15 +1,13 @@
-// require('dotenv').config();
-const { MongoClient, ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb');
 const express = require("express");
 const router = express.Router();
-const mongoose = require('mongoose');
 
 // Get all Products list
 
 router.get('/products/get', async (req, res) => {
   const db = req.db;
-  const productsCollection = db.collection('Products');
-  const products = await productsCollection.find({}).toArray();
+  const collection = db.collection('Products');
+  const products = await collection.find({}).toArray();
   res.send(products);
 });
 
@@ -32,7 +30,6 @@ router.post('/products/add', async (req, res) => {
   const collection = db.collection('Products');
   const result = await collection.insertOne(req.body);
   res.json(result);
-  // res.status(200).json('nice');
 });
 
 // Update a products by ID

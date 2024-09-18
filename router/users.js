@@ -1,5 +1,4 @@
-// require('dotenv').config();
-const { MongoClient, ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb');
 const express = require("express");
 const router = express.Router();
 
@@ -7,8 +6,8 @@ const router = express.Router();
 
 router.get('/users/get', async (req, res) => {
   const db = req.db;
-  const usersCollection = db.collection('Users');
-  const users  = await usersCollection.find({}).toArray();
+  const collection = db.collection('Users');
+  const users  = await collection.find({}).toArray();
   res.send(users);
 });
 

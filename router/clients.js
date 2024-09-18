@@ -1,4 +1,4 @@
-const { MongoClient, ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb');
 const express = require("express");
 const router = express.Router();
 
@@ -6,8 +6,8 @@ const router = express.Router();
 
 router.get('/clients/get', async (req, res) => {
   const db = req.db;
-  const clientsCollection = db.collection('Clients');
-  const clients = await clientsCollection.find({}).toArray();
+  const collection = db.collection('Clients');
+  const clients = await collection.find({}).toArray();
   res.send(clients);
 });
 
