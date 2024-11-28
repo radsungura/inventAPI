@@ -1,14 +1,17 @@
-// require('dotenv').config();
-const { MongoClient, ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb');
 const express = require("express");
 const router = express.Router();
 
+// Get all Supplires list
+
 router.get('/suppliers/get', async (req, res) => {
   const db = req.db;
-  const suppliersCollection = db.collection('Suppliers');
-  const suppliers  = await suppliersCollection.find({}).toArray();
+  const collection = db.collection('Suppliers');
+  const suppliers  = await collection.find({}).toArray();
   res.send(suppliers);
 });
+
+// Get a Supplier by ID
 
 router.get("/suppliers/get/:id", async (req, res) => {
   const db = req.db;
@@ -24,7 +27,6 @@ router.get("/suppliers/get/:id", async (req, res) => {
 
 router.post('/suppliers/add', async (req, res) => {
   const db = req.db;
-  console.log(req);
   const collection = db.collection('Suppliers');
   const result = await collection.insertOne(req.body);
   res.json(result);
@@ -40,8 +42,6 @@ router.put('/suppliers/set/:id', async (req, res) => {
     { $set: req.body }
   );
   res.status(200).json(result);
-  console.log("set data", req.body);
-
 });
 
 // Delete a suppliers by ID
